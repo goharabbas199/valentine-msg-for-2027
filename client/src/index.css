@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-hacker: 'Fira Code', monospace;
+  --font-romantic: 'Playfair Display', serif;
+  --font-body: 'Montserrat', sans-serif;
+
+  /* Cinematic Red Palette */
+  --background: 0 0% 0%;         /* Black start */
+  --foreground: 0 0% 100%;       /* White text */
+  
+  --primary: 345 100% 50%;       /* #ff0033 Red Neon */
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 342 100% 65%;     /* #ff4d6d Soft Pink/Red */
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 345 40% 20%;
+  --muted-foreground: 345 40% 70%;
+
+  --accent: 345 100% 50%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 345 30% 20%;
+  --input: 345 30% 20%;
+  --ring: 345 100% 50%;
+
+  --radius: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-foreground antialiased overflow-hidden;
+    font-family: var(--font-body);
+  }
+}
+
+@layer utilities {
+  .font-hacker {
+    font-family: var(--font-hacker);
+  }
+  .font-romantic {
+    font-family: var(--font-romantic);
+  }
+  
+  /* Cinematic Glows */
+  .glow-text {
+    text-shadow: 0 0 10px rgba(255, 0, 51, 0.5), 0 0 20px rgba(255, 0, 51, 0.3);
+  }
+  
+  .glow-box {
+    box-shadow: 0 0 20px rgba(255, 0, 51, 0.2), inset 0 0 20px rgba(255, 0, 51, 0.1);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 5px #ff0033, 0 0 10px #ff0033, 0 0 20px #ff0033;
+  }
+  
+  .crt-overlay {
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
+}

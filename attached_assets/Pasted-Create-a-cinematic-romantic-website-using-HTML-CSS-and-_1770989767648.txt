@@ -1,0 +1,156 @@
+Create a cinematic romantic website using HTML, CSS, and JavaScript.
+
+Use 3 separate files:
+- index.html
+- style.css
+- script.js
+
+No external frameworks.
+Clean, professional code.
+Responsive design.
+
+----------------------------------
+THEME STRUCTURE
+----------------------------------
+
+1) INTRO SCREEN (Short Hacker Style Only At Beginning)
+
+Full screen black background.
+
+Typing animation that displays:
+
+⚠ Unauthorized access detected...
+Connecting to Mun's device...
+Source identified: Year 2075
+Secure romantic transmission incoming...
+
+After typing finishes, smoothly fade transition into the romantic theme.
+
+----------------------------------
+
+2) ROMANTIC RED THEME (After Intro)
+
+Switch completely to an elegant romantic deep red gradient background:
+#2b0a12 to #5a0f1f
+
+Use soft glowing red accents:
+#ff0033
+#ff4d6d
+
+Modern clean typography.
+No card design.
+No floating hearts.
+No childish design.
+
+Smooth fade transitions between sections.
+
+----------------------------------
+
+3) VIDEO SECTION
+
+Full screen video.
+Autoplay.
+object-fit: cover.
+Covers entire screen.
+
+After video ends automatically fade into the question section.
+
+----------------------------------
+
+4) VALENTINE QUESTION SECTION
+
+Centered content.
+Large glowing text:
+
+Will You Be My Valentine?
+
+Subtext:
+And promise to love even the old, wrinkly version of me?
+
+Two buttons:
+
+YES ❤️
+- Neon red glowing button
+- Smooth hover scale animation
+- Soft glow effect
+
+NO 😌
+- Subtle outlined red
+- Soft hover animation
+
+----------------------------------
+
+5) NO BUTTON LOGIC (IMPORTANT)
+
+Do NOT auto redirect to YES.
+
+When NO is clicked:
+Stay on same screen and show playful messages.
+Each time NO is clicked, show a different message.
+
+First NO click:
+Display:
+"Hmm… that answer seems incorrect."
+"Please reconsider carefully."
+
+Show buttons:
+YES ❤️
+NO 😌
+
+Second NO click:
+Display:
+"System Warning: That future version of me looks pretty good with white hair."
+"Are you sure you want to lose that?"
+
+Show buttons:
+YES ❤️
+NO 😌
+
+Third NO click:
+Display:
+"Critical Alert: This love story strongly prefers YES."
+"And honestly… don’t I look hot with white hair?"
+
+Remove the NO button completely.
+Only show:
+YES ❤️
+
+Do NOT auto transition.
+Wait for user to click YES.
+
+All transitions must be smooth fade animations.
+Messages should appear centered with slight red glow.
+
+----------------------------------
+
+6) YES BUTTON LOGIC
+
+When YES is clicked:
+Fade to final screen:
+
+Future Secured ❤️
+Present version extremely happy.
+
+Soft glow animation on text.
+Romantic red background remains.
+
+----------------------------------
+
+TECHNICAL REQUIREMENTS
+
+- Smooth fade transitions between all screens
+- Typing animation for intro
+- Clean modular structure
+- Well commented code
+- Use vanilla JavaScript only
+- No external libraries
+- Elegant romantic cinematic feel
+- Only the intro feels hacked
+- Rest of site feels romantic red
+
+----------------------------------
+
+Deliver complete working code in:
+index.html
+style.css
+script.js
